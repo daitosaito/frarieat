@@ -1,0 +1,33 @@
+br
+br
+br
+br
+br
+brbr
+br
+brbr
+br
+brbr
+br
+brbr
+br
+br
+
+= form_for(@place_image) do |f|
+ .field
+  = f.label :place_id
+  =f.text_field :place_id
+ .field
+  = f.label :role
+  =f.text_field :role
+  .field
+  = f.label :image
+  =f.file_field :image
+
+  = f.submit
+
+end
+
+- @images.each do |image|
+  = image_tag image.image.thumb.url
+  end

@@ -1,0 +1,14 @@
+figure.effect-oscar.wowload.fadeInUp
+  - if place.place_images.present?
+    = image_tag place.place_images.main_pic.image.thumb
+    figcaption
+      a[href="/places/#{place.id}"]
+      h2
+       | #{place.name}
+      p
+        | #{place.explanation}
+        br
+        br
+        a.data-gallery
+          | この場所のcooksを見る
+

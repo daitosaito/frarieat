@@ -782,8 +782,6 @@ pre code {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -822,7 +820,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1010px;
+    width: 100%;
   }
 }
 
@@ -4322,7 +4320,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 

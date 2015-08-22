@@ -9,7 +9,7 @@
           h1.animated.bounceInUp
             | Best place for delicious pizza and coffee
           p.animated.bounceInLeft
-            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           a.explore.animated.bounceInDown[href="#menu"]
             i.fa.fa-angle-down.fa-3x
 #menu.container.spacer.about
@@ -19,7 +19,7 @@
     .col-sm-6.wowload.fadeInLeft
       h4
         i.fa.fa-camera-retro
-        |  Introduction 
+        |  Introduction
       p
         | Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.
       p
@@ -34,7 +34,7 @@
             h4.panel-title
               a[data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"]
                 i.fa.fa-coffee
-                |  Tea & Coffee 
+                |  Tea & Coffee
           #collapseOne.panel-collapse.collapse[role="tabpanel"]
             .panel-body
               .clearfix.food-list
@@ -62,7 +62,7 @@
             h4.panel-title
               a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"]
                 i.fa.fa-fire
-                |  Firewood Pizza and Spaghetti 
+                |  Firewood Pizza and Spaghetti
           #collapseTwo.panel-collapse.collapse[role="tabpanel"]
             .panel-body
               .clearfix.food-list
@@ -90,7 +90,7 @@
             h4.panel-title
               a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"]
                 i.fa.fa-beer
-                |  Beers & Cocktails 
+                |  Beers & Cocktails
           #collapseThree.panel-collapse.collapse[role="tabpanel"]
             .panel-body
               .clearfix.food-list
@@ -118,7 +118,7 @@
             h4.panel-title
               a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"]
                 i.fa.fa-spoon
-                |  Fine Dinner 
+                |  Fine Dinner
           #collapseFour.panel-collapse.collapse[role="tabpanel"]
             .panel-body
               .clearfix.food-list
@@ -146,7 +146,7 @@
             h4.panel-title
               a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"]
                 i.fa.fa-birthday-cake
-                |  Bakery 
+                |  Bakery
           #collapseFive.panel-collapse.collapse[role="tabpanel"]
             .panel-body
               .clearfix.food-list
@@ -170,66 +170,80 @@
                 span.pull-right
                   | $ 10.00
 #foods.clearfix.grid
-  figure.effect-oscar.wowload.fadeInUp
-    = image_tag("portfolio/1.jpg")
-    figcaption
-      h2
-        | Cappuchino
-      p
-        | Lily likes to play with crayons and pencils
-        br
-        a[href="images/portfolio/1.jpg" title="1" data-gallery]
-          | View more
-  figure.effect-oscar.wowload.fadeInUp
-    = image_tag("portfolio/2.jpg")
-    figcaption
-      h2
-        | Latte
-      p
-        | Lily likes to play with crayons and pencils
-        br
-        a[href="images/portfolio/2.jpg" title="1" data-gallery]
-          | View more
-  figure.effect-oscar.wowload.fadeInUp
-    = image_tag("portfolio/3.jpg")
-    figcaption
-      h2
-        | Ambience
-      p
-        | Lily likes to play with crayons and pencils
-        br
-        a[href="images/portfolio/3.jpg" title="1" data-gallery]
-          | View more
-  figure.effect-oscar.wowload.fadeInUp
-    = image_tag("portfolio/4.jpg")
-    figcaption
-      h2
-        | Fruits
-      p
-        | Lily likes to play with crayons and pencils
-        br
-        a[href="images/portfolio/4.jpg" title="1" data-gallery]
-          | View more
-  figure.effect-oscar.wowload.fadeInUp
-    = image_tag("portfolio/5.jpg")
-    figcaption
-      h2
-        | Breakfast
-      p
-        | Lily likes to play with crayons and pencils
-        br
-        a[href="images/portfolio/5.jpg" title="1" data-gallery]
-          | View more
-  figure.effect-oscar.wowload.fadeInUp
-    = image_tag("portfolio/6.jpg")
-    figcaption
-      h2
-        | Kitchen
-      p
-        | Lily likes to play with crayons and pencils
-        br
-        a[href="images/portfolio/6.jpg" title="1" data-gallery]
-          | View more
+  = render @places
+
+  / figure.effect-oscar.wowload.fadeInUp
+  /   = image_tag PlaceImage.find(18).image.thumb
+  /   figcaption
+  /     h2
+  /       | Cappuchino
+  /     p
+  /       | Lily likes to play with crayons and pencils
+  /       br
+  /       a[href="images/portfolio/1.jpg" title="1" data-gallery]
+  /         | View more
+
+
+  / figure.effect-oscar.wowload.fadeInUp
+  /   = image_tag PlaceImage.find(18).image.thumb
+  /   figcaption
+  /     h2
+  /       | Latte
+  /     p
+  /       | Lily likes to play with crayons and pencils
+  /       br
+  /       a[href="images/portfolio/2.jpg" title="1" data-gallery]
+  /         | View more
+
+
+  / figure.effect-oscar.wowload.fadeInUp
+  /   = image_tag PlaceImage.find(18).image.thumb
+  /   figcaption
+  /     h2
+  /       | Ambience
+  /     p
+  /       | Lily likes to play with crayons and pencils
+  /       br
+  /       a[href="images/portfolio/3.jpg" title="1" data-gallery]
+  /         | View more
+
+
+  / figure.effect-oscar.wowload.fadeInUp
+  /   = image_tag PlaceImage.find(18).image.thumb
+  /   figcaption
+  /     h2
+  /       | Fruits
+  /     p
+  /       | Lily likes to play with crayons and pencils
+  /       br
+  /       a[href="images/portfolio/4.jpg" title="1" data-gallery]
+  /         | View more
+
+
+  / figure.effect-oscar.wowload.fadeInUp
+  /   = image_tag PlaceImage.find(18).image.thumb
+  /   figcaption
+  /     h2
+  /       | Breakfast
+  /     p
+  /       | Lily likes to play with crayons and pencils
+  /       br
+  /       a[href="images/portfolio/5.jpg" title="1" data-gallery]
+  /         | View more
+
+
+  / figure.effect-oscar.wowload.fadeInUp
+  /   = image_tag PlaceImage.find(18).image.thumb
+  /   figcaption
+  /     h2
+  /       | Kitchen
+  /     p
+  /       | Lily likes to play with crayons and pencils
+  /       br
+  /       a[href="images/portfolio/6.jpg" title="1" data-gallery]
+  /         | View more
+
+
 #partners.container.spacer
   h2.text-center.wowload.fadeInUp
     | Some of our happy customers
@@ -242,9 +256,9 @@
               = image_tag("team/1.jpg",class: "img-circle img-responsive", width: "100")
             .col-xs-10
               p
-                |  I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+                |  I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
               span
-                | Angel Smith - 
+                | Angel Smith -
                 b
                   | eshop Canada
           .item.animated.bounceInRight.row
@@ -254,7 +268,7 @@
               p
                 | No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
               span
-                | John Partic - 
+                | John Partic -
                 b
                   | Crazy Pixel
           .item.animated.bounceInRight.row
@@ -264,7 +278,7 @@
               p
                 | On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.
               span
-                | Harris David - 
+                | Harris David -
                 b
                   | Jet London
         ol.carousel-indicators
