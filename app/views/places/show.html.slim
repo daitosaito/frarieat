@@ -1,0 +1,6 @@
+h2.text-center.wowload.fadeInUp
+  | 行きつけの、"あの人"の家庭料理を
+
+- @place.users.each do |user|
+  = render partial: "place_user", locals: {user: user}
+end

@@ -1,361 +1,224 @@
 .topbar.animated.fadeInLeftBig
 #home
   .banner
-    = image_tag("back.jpg", class: "img-responsive")
+    = image_tag("s_top.jpg", class: "img-responsive")
     .caption
       .caption-wrapper
         .caption-info
-          i.fa.fa-coffee.fa-5x.animated.bounceInDown
+          = image_tag("s_ふらり〜と1.png", class: "img-responsive")
           h1.animated.bounceInUp
-            | Best place for delicious pizza and coffee
-          p.animated.bounceInLeft
-            | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            | 家庭の味をオフィスでも
           a.explore.animated.bounceInDown[href="#menu"]
             i.fa.fa-angle-down.fa-3x
 #menu.container.spacer.about
   h2.text-center.wowload.fadeInUp
-    | Creative photographers of London
-  .row
-    .col-sm-6.wowload.fadeInLeft
-      h4
-        i.fa.fa-camera-retro
-        |  Introduction
-      p
-        | Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.
-      p
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    .col-sm-6.wowload.fadeInRight
-      h4
-        i.fa.fa-bars
-        |  Menu
-      #accordion.panel-group[role="tablist" aria-multiselectable="true"]
-        .panel.panel-default
-          .panel-heading[role="tab"]
-            h4.panel-title
-              a[data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"]
-                i.fa.fa-coffee
-                |  Tea & Coffee
-          #collapseOne.panel-collapse.collapse[role="tabpanel"]
-            .panel-body
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-        .panel.panel-default
-          .panel-heading[role="tab"]
-            h4.panel-title
-              a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"]
-                i.fa.fa-fire
-                |  Firewood Pizza and Spaghetti
-          #collapseTwo.panel-collapse.collapse[role="tabpanel"]
-            .panel-body
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-        .panel.panel-default
-          .panel-heading[role="tab"]
-            h4.panel-title
-              a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"]
-                i.fa.fa-beer
-                |  Beers & Cocktails
-          #collapseThree.panel-collapse.collapse[role="tabpanel"]
-            .panel-body
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-        .panel.panel-default
-          .panel-heading[role="tab"]
-            h4.panel-title
-              a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"]
-                i.fa.fa-spoon
-                |  Fine Dinner
-          #collapseFour.panel-collapse.collapse[role="tabpanel"]
-            .panel-body
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-        .panel.panel-default
-          .panel-heading[role="tab"]
-            h4.panel-title
-              a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"]
-                i.fa.fa-birthday-cake
-                |  Bakery
-          #collapseFive.panel-collapse.collapse[role="tabpanel"]
-            .panel-body
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
-              .clearfix.food-list
-                .pull-left
-                  | Tea/Coffee
-                span.pull-right
-                  | $ 10.00
+    | まずは場所をお選び下さい
+  / .row
+  /   .col-sm-6.wowload.fadeInLeft
+  /     h4
+  /       i.fa.fa-camera-retro
+  /       |  Introduction
+  /     p
+  /       | Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.
+  /     p
+  /       | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  /   .col-sm-6.wowload.fadeInRight
+  /     h4
+  /       i.fa.fa-bars
+  /       |  Menu
+  /     #accordion.panel-group[role="tablist" aria-multiselectable="true"]
+  /       .panel.panel-default
+  /         .panel-heading[role="tab"]
+  /           h4.panel-title
+  /             a[data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"]
+  /               i.fa.fa-coffee
+  /               |  Tea & Coffee
+  /         #collapseOne.panel-collapse.collapse[role="tabpanel"]
+  /           .panel-body
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /       .panel.panel-default
+  /         .panel-heading[role="tab"]
+  /           h4.panel-title
+  /             a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"]
+  /               i.fa.fa-fire
+  /               |  Firewood Pizza and Spaghetti
+  /         #collapseTwo.panel-collapse.collapse[role="tabpanel"]
+  /           .panel-body
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /       .panel.panel-default
+  /         .panel-heading[role="tab"]
+  /           h4.panel-title
+  /             a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"]
+  /               i.fa.fa-beer
+  /               |  Beers & Cocktails
+  /         #collapseThree.panel-collapse.collapse[role="tabpanel"]
+  /           .panel-body
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /       .panel.panel-default
+  /         .panel-heading[role="tab"]
+  /           h4.panel-title
+  /             a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"]
+  /               i.fa.fa-spoon
+  /               |  Fine Dinner
+  /         #collapseFour.panel-collapse.collapse[role="tabpanel"]
+  /           .panel-body
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /       .panel.panel-default
+  /         .panel-heading[role="tab"]
+  /           h4.panel-title
+  /             a.collapsed[data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"]
+  /               i.fa.fa-birthday-cake
+  /               |  Bakery
+  /         #collapseFive.panel-collapse.collapse[role="tabpanel"]
+  /           .panel-body
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+  /             .clearfix.food-list
+  /               .pull-left
+  /                 | Tea/Coffee
+  /               span.pull-right
+  /                 | $ 10.00
+
+
 #foods.clearfix.grid
   = render @places
 
-  / figure.effect-oscar.wowload.fadeInUp
-  /   = image_tag PlaceImage.find(18).image.thumb
-  /   figcaption
-  /     h2
-  /       | Cappuchino
-  /     p
-  /       | Lily likes to play with crayons and pencils
-  /       br
-  /       a[href="images/portfolio/1.jpg" title="1" data-gallery]
-  /         | View more
+/ #partners.container.spacer
+/   h2.text-center.wowload.fadeInUp
+/     | Some of our happy customers
+/   .clearfix
+/     .col-sm-6.col-sm-offset-3
+/       #carousel-testimonials.carousel.slide.testimonails.wowload.fadeInRight[data-ride="carousel"]
+/         .carousel-inner
+
+/           .item.active.animated.bounceInRight.row
+/             .animated.slideInLeft.col-xs-2
+/               = image_tag("team/1.jpg",class: "img-circle img-responsive", width: "100")
+/             .col-xs-10
+/               p
+/                 |  I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+/               span
+/                 | Angel Smith -
+/                 b
+/                   | eshop Canada
+
+/           .item.animated.bounceInRight.row
+/             .animated.slideInLeft.col-xs-2
+/               = image_tag("team/1.jpg",class: "img-circle img-responsive", width: "100")
+/             .col-xs-10
+/               p
+/                 | No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+/               span
+/                 | John Partic -
+/                 b
+/                   | Crazy Pixel
 
 
-  / figure.effect-oscar.wowload.fadeInUp
-  /   = image_tag PlaceImage.find(18).image.thumb
-  /   figcaption
-  /     h2
-  /       | Latte
-  /     p
-  /       | Lily likes to play with crayons and pencils
-  /       br
-  /       a[href="images/portfolio/2.jpg" title="1" data-gallery]
-  /         | View more
+  /       ol.carousel-indicators
+  /         li.active[data-target="#carousel-testimonials" data-slide-to="0"]
+  /         li[data-target="#carousel-testimonials" data-slide-to="1"]
+  /         li[data-target="#carousel-testimonials" data-slide-to="2"]
+  / h3.text-center.wowload.fadeInUp
+  /   | Our Chefs
+  / p.text-center.wowload.fadeInLeft
+  /   | Our chefs that is making everything possible
+  / .row.grid.team.wowload.fadeInUpBig
 
-
-  / figure.effect-oscar.wowload.fadeInUp
-  /   = image_tag PlaceImage.find(18).image.thumb
-  /   figcaption
-  /     h2
-  /       | Ambience
-  /     p
-  /       | Lily likes to play with crayons and pencils
-  /       br
-  /       a[href="images/portfolio/3.jpg" title="1" data-gallery]
-  /         | View more
-
-
-  / figure.effect-oscar.wowload.fadeInUp
-  /   = image_tag PlaceImage.find(18).image.thumb
-  /   figcaption
-  /     h2
-  /       | Fruits
-  /     p
-  /       | Lily likes to play with crayons and pencils
-  /       br
-  /       a[href="images/portfolio/4.jpg" title="1" data-gallery]
-  /         | View more
-
-
-  / figure.effect-oscar.wowload.fadeInUp
-  /   = image_tag PlaceImage.find(18).image.thumb
-  /   figcaption
-  /     h2
-  /       | Breakfast
-  /     p
-  /       | Lily likes to play with crayons and pencils
-  /       br
-  /       a[href="images/portfolio/5.jpg" title="1" data-gallery]
-  /         | View more
-
-
-  / figure.effect-oscar.wowload.fadeInUp
-  /   = image_tag PlaceImage.find(18).image.thumb
-  /   figcaption
-  /     h2
-  /       | Kitchen
-  /     p
-  /       | Lily likes to play with crayons and pencils
-  /       br
-  /       a[href="images/portfolio/6.jpg" title="1" data-gallery]
-  /         | View more
-
-
-#partners.container.spacer
-  h2.text-center.wowload.fadeInUp
-    | Some of our happy customers
-  .clearfix
-    .col-sm-6.col-sm-offset-3
-      #carousel-testimonials.carousel.slide.testimonails.wowload.fadeInRight[data-ride="carousel"]
-        .carousel-inner
-          .item.active.animated.bounceInRight.row
-            .animated.slideInLeft.col-xs-2
-              = image_tag("team/1.jpg",class: "img-circle img-responsive", width: "100")
-            .col-xs-10
-              p
-                |  I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
-              span
-                | Angel Smith -
-                b
-                  | eshop Canada
-          .item.animated.bounceInRight.row
-            .animated.slideInLeft.col-xs-2
-              = image_tag("team/1.jpg",class: "img-circle img-responsive", width: "100")
-            .col-xs-10
-              p
-                | No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-              span
-                | John Partic -
-                b
-                  | Crazy Pixel
-          .item.animated.bounceInRight.row
-            .animated.slideInLeft.col-xs-2
-              img.img-circle.img-responsive[alt="portfolio" src="images/team/3.jpg" width="100"]
-            .col-xs-10
-              p
-                | On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.
-              span
-                | Harris David -
-                b
-                  | Jet London
-        ol.carousel-indicators
-          li.active[data-target="#carousel-testimonials" data-slide-to="0"]
-          li[data-target="#carousel-testimonials" data-slide-to="1"]
-          li[data-target="#carousel-testimonials" data-slide-to="2"]
-  h3.text-center.wowload.fadeInUp
-    | Our Chefs
-  p.text-center.wowload.fadeInLeft
-    | Our chefs that is making everything possible
-  .row.grid.team.wowload.fadeInUpBig
-    .col-sm-3.col-xs-6
-      figure.effect-chico
-        = image_tag("team/8.jpg", class: "img-responsive")
-        figcaption
-          p
-            b
-              | Barbara Husto
-            br
-            | Senior Chef
-    .col-sm-3.col-xs-6
-      figure.effect-chico
-        = image_tag("team/10.jpg", class: "img-responsive")
-        figcaption
-          p
-            b
-              | Barbara Husto
-            br
-            | Chef
-    .col-sm-3.col-xs-6
-      figure.effect-chico
-        = image_tag("team/8.jpg", class: "img-responsive")
-        figcaption
-          p
-            b
-              | Barbara Husto
-            br
-            | Asst Chef
-    .col-sm-3.col-xs-6
-      figure.effect-chico
-        = image_tag("team/8.jpg", class: "img-responsive")
-        figcaption
-          p
-            b
-              | Barbara Husto
-            br
-            | Asst Chef
-.highlight-info
-  .overlay.spacer
-    .container
-      .row.text-center.wowload.fadeInDownBig
-        .col-sm-3.col-xs-6
-          i.fa.fa-smile-o.fa-5x
-          h4
-            | 24152 Clients
-        .col-sm-3.col-xs-6
-          i.fa.fa-thumbs-up.fa-5x
-          h4
-            | 25 Variety
-        .col-sm-3.col-xs-6
-          i.fa.fa-history.fa-5x
-          h4
-            | 15 yrs old
-        .col-sm-3.col-xs-6
-          i.fa.fa-map-marker.fa-5x
-          h4
-            | 2 Locations
-#contact.spacer
-  .container.contactform.center
-    h2.text-center.wowload.fadeInUp
-      | Reservation
-    .row.wowload.fadeInLeftBig
-      .col-sm-6.col-sm-offset-3.col-xs-12
-        input[type="text" placeholder="Name"]
-        input[type="text" placeholder="Company"]
-        textarea[rows="5" placeholder="Message"]
-        button.btn.btn-primary
-          i.fa.fa-paper-plane
-          |  Send
-#map
+    / .col-sm-3.col-xs-6
+    /   figure.effect-chico
+    /     = image_tag("team/8.jpg", class: "img-responsive")
+    /     figcaption
+    /       p
+    /         b
+    /           | Barbara Husto
+    /         br
+    /         | Senior Chef
