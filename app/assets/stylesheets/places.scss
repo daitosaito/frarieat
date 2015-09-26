@@ -1,3 +1,90 @@
-// Place all the styles related to the places controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.restmenuwrap {
+  box-shadow:inset 0 0 0 16px #fff,inset 0 0 0 17px #eee,inset 0 0 0 18px #fff,inset 0 0 0 19px #eee,inset 0 0 0 20px #fff,inset 0 0 0 21px #eee,0 4px 20px rgba(0,0,0,0.1);
+  -webkit-transform:translateZ(0px);
+  transform:translateZ(0px);
+  opacity:1;
+  pointer-events:auto;
+}
+.restmenuwrap h5 {
+  margin:0;
+  font-size:14px;
+}
+
+.restmenuwrap {
+  font-size:12px;
+  padding:40px 40px 20px 40px;
+  margin:  20px;
+  height: auto;
+}
+
+.restmenuwrap h3.maincat {
+  margin:0 0 20px 0;
+  font-size:19px;
+  padding-bottom:10px;
+  color:#cc580c;
+  border-bottom: 4px double #eee;
+}
+
+.restitem{
+  margin-bottom:30px;
+}
+
+.restitem h5 {
+  color: #cc580c;
+}
+
+.restitem .img-responsive{
+  margin: 0 auto;
+}
+
+.restitem p {
+  margin-bottom:0px;
+}
+
+.restitem.clearfix  button.btn.btn-success {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+div.sub_pics {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.sub_pics img {
+  width:50px;
+  height:50px;
+  background-repeat:no-repeat;
+  background-position:center center;
+  float:left;
+  box-shadow:inset 1px 1px 3px rgba(0,0,0,0.2),1px 1px 1px rgba(255,255,255,0.1);
+}
+
+.cook_profile:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cook_profile img.img-responsive {
+  width:120px;
+  height:120px;
+  background-repeat:no-repeat;
+  background-position:center center;
+  float:left;
+  box-shadow:inset 1px 1px 3px rgba(0,0,0,0.2),1px 1px 1px rgba(255,255,255,0.1);
+  border-radius:50%;
+  margin-right: 20px;
+}
+
+.cook_profile {
+  border-top: medium #cc580c dotted;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.dish_profile {
+  padding-bottom: 20px;
+}

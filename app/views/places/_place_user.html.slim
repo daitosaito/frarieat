@@ -1,0 +1,132 @@
+/ - user.dish.dish_images.each do |img|
+/   = image_tag img.image.thumb
+/ end
+
+
+/ p.text-center.wowload.fadeInLeft
+/   | Our chefs that is making everything possible
+/ .row.grid.team.wowload.fadeInUpBig
+
+
+
+/   .col-sm-3.col-xs-6
+/     figure.effect-chico
+/       = image_tag("team/8.jpg", class: "img-responsive")
+/       figcaption
+/         p
+/           b
+/             | Barbara Husto
+/           br
+/           | Senior Chef
+
+
+
+/   .col-sm-3.col-xs-6
+/     figure.effect-chico
+/       = image_tag("team/10.jpg", class: "img-responsive")
+/       figcaption
+/         p
+/           b
+/             | Barbara Husto
+/           br
+/           | Chef
+
+
+
+/   .col-sm-3.col-xs-6
+/     figure.effect-chico
+/       = image_tag("team/8.jpg", class: "img-responsive")
+/       figcaption
+/         p
+/           b
+/             | Barbara Husto
+/           br
+/           | Asst Chef
+
+
+
+/   .col-sm-3.col-xs-6
+/     figure.effect-chico
+/       = image_tag("team/8.jpg", class: "img-responsive")
+/       figcaption
+/         p
+/           b
+/             | Barbara Husto
+/           br
+/
+
+
+
+
+.col-md-4
+  .restmenuwrap
+    h3.maincat.notopmarg.text-center
+      | 肉じゃが定食
+    .restitem.clearfix
+      .dish_profile
+        .main_pic
+          = image_tag Place.find(4).place_images.main_pic.image.thumb, class: "img-responsive"
+        br
+        div.sub_pics
+          - PlaceImage.all.each do |img|
+            = image_tag img.image.thumb
+        br
+        .dish_title
+          | 家庭料理の典型。懐かしいですね。
+      .cook_profile
+        = image_tag "saito_profile.jpg", class: "img-responsive"
+        h5
+          | 齋藤大斗
+        br
+          | 鮨食べたい
+      button.btn.btn-success
+        i.fa.fa-paper-plane　このcookの料理を食べたい！
+
+.col-md-4
+  .restmenuwrap
+    h3.maincat.notopmarg.text-center
+      | カレー
+    .restitem.clearfix
+      .dish_profile
+        .main_pic
+          = image_tag Place.find(4).place_images.main_pic.image.thumb, class: "img-responsive"
+        br
+        div.sub_pics
+          - PlaceImage.all.each do |img|
+            = image_tag img.image.thumb
+        br
+        .dish_title
+          | 家によってはちくわを入れる所もあるらしい
+      .cook_profile
+        = image_tag "saito_profile.jpg", class: "img-responsive"
+        h5
+          | 齋藤大斗
+        br
+          | 鮨食べたい
+      button.btn.btn-success
+        i.fa.fa-paper-plane　このcookの料理を食べたい！
+
+.col-md-4
+  .restmenuwrap
+    h3.maincat.notopmarg.text-center
+      | 鯖の塩焼き定食
+    .restitem.clearfix
+      .dish_profile
+        .main_pic
+          = image_tag Place.find(4).place_images.main_pic.image.thumb, class: "img-responsive"
+        br
+        div.sub_pics
+          - PlaceImage.all.each do |img|
+            = image_tag img.image.thumb
+        br
+        .dish_title
+          | はやり魚が食べれるのは日本人としても嬉しい所
+      .cook_profile
+        = image_tag "saito_profile.jpg", class: "img-responsive"
+        h5
+          | 齋藤大斗
+        br
+          | 鮨食べたい
+      button.btn.btn-success
+        i.fa.fa-paper-plane　このcookの家庭料理を食べたい！
+

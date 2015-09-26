@@ -1,29 +1,21 @@
-.navbar-wrapper
-  .container
-    #top-nav.navbar.navbar-inverse[role="navigation"]
-      .container
-        .navbar-header
-          = image_tag("logo.png", class: "navbar-brand")
-          button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target=".navbar-collapse"]
-            span.sr-only
-              | Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-        .navbar-collapse.collapse
-          ul.nav.navbar-nav.navbar-right.scroll
-            li.active
-              a[href="#home"]
-                | Home
-            li
-              a[href="#menu"]
-                | Menu
-            li
-              a[href="#foods"]
-                | Foods
-            li
-              a[href="#partners"]
-                | Partners
-            li
-              a[href="#contact"]
-                | Contact
+/ .navbar-wrapper
+/   .container
+/     .navbar-collapse.collapse
+/       ul.nav.navbar-nav.navbar-right.scroll
+/         li.active
+/           = link_to root_path
+/             | Home
+/         - if user_signed_in?
+/           li
+/             = link_to new_dish_path
+/               | 料理を投稿する
+/           li
+/             = link_to destroy_user_session_path
+/               | ログアウト
+/         - else
+/           li
+/             = link_to new_user_session_path
+/               | ログイン
+/           li
+/             = link_to new_user_registration_path
+/               | 会員登録する
